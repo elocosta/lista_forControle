@@ -6,22 +6,18 @@
     Calcule a média das notas e apresente o resultado na tela.
     */
 
-    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
-    let listaRepetidas =[]
-
-
     
-    //PROCESSAMENTO
-    for (let i=0; i<= listaDeLetras.length; i++){
-       
-        letra = listaDeLetras[i].toLowerCase()
+    let quantidadeNotas = Number(prompt(`informe quantas notas o aluno teve`));
+    let soma = 0
+
+    for(let notas = 1 ; notas <=quantidadeNotas ; notas++){
         
-       
-    
+        let valorNotas = Number(prompt(`quantos o aluno tirou na ${notas} prova`))
+         soma +=valorNotas
+
     }
 
-    
-    //SAÍDA
-    alert(`a${letraMinuscula}`)
+        let notaFinal= (soma/quantidadeNotas)
+        alert(notaFinal)
 
 </script>

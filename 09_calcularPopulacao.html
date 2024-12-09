@@ -5,21 +5,18 @@
     Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano. Apresente em tela a população prevista para um prazo de 5 anos e um prazo de 10 anos. Apresente os dados em tela.
     */
    
-    document.write(`Ano 5: ${Math.round(ano5)}<br>Ano 10: ${Math.round(ano10)}`) //ENTRADA
-    let população = 50000;
-    let taxaCrescimento = 0.015;
-    let ano = 0;
-    let ano5 = população;
+    let populacao = 50000;
+
+
+    for(let i = 1; i <=10; i++){
+        populacao += populacao* 0.015
+        if(i == 5){
+            alert(`no ano ${i} a população sera ${populacao}`);
+        }
+        else if (i == 10){
+            alert(`no ano ${i} a populção sera ${populacao}`)
+        }
+        
     
-    for (ano = 1; ano<=5; ano++){
-        ano5 += ano5 * taxaCrescimento
     }
-    let ano10 = população;
-    for( ano = 1; ano <=10; ano++){
-        ano10 += ano10*taxaCrescimento
-    }
-
-
-    document.write(`Ano 5: ${Math.round(ano5)}<br>Ano 10: ${Math.round(ano10)}`)
-
 </script>

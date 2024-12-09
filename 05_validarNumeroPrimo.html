@@ -5,25 +5,19 @@
     Faça um programa que peça para o usuário informar um número. Identifique se o número fornecido pelo usuário é um número primo e apresente na tela.
     */
 
-    let numerousuario = Number(prompt(`Informe um número e descubra se ele é primo`));
-    let divisivel = 0
+    
+    let quantidadeNotas = Number(prompt(`informe quantas notas o aluno teve`));
+    let soma = 0
 
-
-    //PROCESSAMENTO
-    for (let i = 1; i <= numerousuario; i++) {
-        if (numerousuario % i === 0) {
-            divisivel = divisivel + 1
-        }
+    for(let notas = 1 ; notas <=quantidadeNotas ; notas++){
+        
+        let valorNotas = Number(prompt(`quantos o aluno tirou na ${notas} prova`))
+         soma +=valorNotas
 
     }
-    if (divisivel > 2) {
-        alert(` O número ${numerousuario} não é um número primo`)
-    } else {
-        alert(`o número ${numerousuario} é um número primo`)
-    }
 
-
-    //SAÍDA
+        let notaFinal= (soma/quantidadeNotas)
+        alert(notaFinal)
 
 
 </script>

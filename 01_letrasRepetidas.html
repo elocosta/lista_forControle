@@ -10,19 +10,15 @@
     */
 
     let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
-    let listaRepetidas =[]
+    let Nrepetidas = [];
+ 
+    for(let i = 0; i<listaDeLetras.length; i++){
+        const letra = listaDeLetras[i]
 
-    
-    //PROCESSAMENTO
-    for (let i=0; i<= listaDeLetras.length; i++){
-       
-        letra = listaDeLetras[i].toLowerCase()
+        let letramin = letra.toLowerCase();
 
-    
+        if(!Nrepetidas.includes(letramin)){
+     Nrepetidas.push(letramin)};
     }
-
-    
-    //SAÍDA
-    alert(`a${listaDeLetras}`)
-
+    alert(Nrepetidas.sort().join(`,`))
 </script>
